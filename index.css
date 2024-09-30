@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Amarillo';
-    src: url('/font/Amarillo.ttf') format('truetype');
+    src: url('./font/Amarillo.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'TmoneyRoundWindRegular';
-    src: url('/font/TmoneyRoundWindRegular.ttf') format('truetype');
+    src: url('./font/TmoneyRoundWindRegular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'TmoneyRoundWindExtraBold';
-    src: url('/font/TmoneyRoundWindExtraBold.ttf') format('truetype');
+    src: url('./font/TmoneyRoundWindExtraBold.ttf') format('truetype');
 }
 body {
     background-color: #fbf4e9;
