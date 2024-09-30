@@ -1,0 +1,101 @@
+<!--시멘틱웹으로 만들기-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Jihyeon's Web</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 전체 배경은 연한 아이보리 색깔-->
+<header>
+    <!--        내 웹 제목 : Jihyeon's Web-->
+    <!--        누르면 홈으로 돌아가기-->
+    <a href="index.html">Jihyeon's Web</a>
+</header>
+<nav class="top_bar">
+    <!--        학력, 베이킹, 반려동물, 여행 -->
+    <!--        누르면 해당 페이지로 이동-->
+    <ul>
+        <li><a class='menu' href="education.html">학력</a></li>
+        <li><a class='menu' href="hobby.html">베이킹</a></li>
+        <li><a class='menu' href="pets.html">반려동물</a></li>
+        <li><a class='menu' href="pets.html">여행</a></li>
+    </ul>
+</nav>
+<main>
+    <!--        정중앙? 큰 사진 하나 /슬라이드 됨, 그 아래 사진관 제목(부제 사진을 눌러보세요)-->
+    <!--        중앙 사진은 관상용 딱히 기능 없음-->
+    <!--        4분할해서 사진 넣기 누르면 관련된 주제로 링크 넘어가기-->
+    <!-- 큰 이미지 -->
+    <section id="main_section">
+        <article>
+            <img src="image/배경용.jpg" alt="메인 이미지">
+            <img src="image/배경용2.jpg" alt="메인 이미지">
+            <img src="image/배경용3.jpg" alt="메인 이미지">
+        </article>
+    </section>
+<!--    4개 원 article-->
+    <h2 class="photo">It contains various memories</h2>
+    <h3 class="photo_ex">나의 추억 사진관</h3>
+
+    <section id="blog_content">
+        <article>
+            <img src="image/travel.png" alt="여행">
+            <p class="blog_P1_pont">여행</p>
+            <p class="blog_P2_pont">다양한 <br>장소의 추억</p>
+        </article>
+        <article>
+            <img src="image/baking.png" alt="베이킹">
+            <p class="blog_P1_pont">베이킹</p>
+            <p class="blog_P2_pont">우당탕 <br>제빵 도전기</p>
+        </article>
+        <article>
+            <img src="image/food.png" alt="음식">
+            <p class="blog_P1_pont">음식</p>
+            <p class="blog_P2_pont">관광지<br>맛집 투어</p>
+        </article>
+    </section>
+    <!-- 사진관 제목 -->
+    <h2 class="photo"># Chooose photo</h2>
+    <h3 class="photo_ex">보고싶은 추억을 선택하세요!</h3>
+
+    <!-- 4개의 article로 나눠진 사진 및 링크 -->
+    <section id="sub_section">
+        <article>
+            <a href="hobby.html#travel">
+                <img src="image/경주.jpg" alt="이미지 1">
+            </a>
+            <p class="sub_section_font"># 경주</p>
+            <button onclick="location.href='hobby.html#travel'">➜</button>
+        </article>
+        <article>
+            <a href="hobby.html#travel">
+                <img src="image/타다끼.jpg" alt="이미지 2">
+            </a>
+            <p class="sub_section_font"># 타다끼</p>
+            <button onclick="location.href='hobby.html#travel'">➜</button>
+        </article>
+        <article>
+            <a href="pets.html">
+                <img src="image/단지누워서잠.jpg" alt="단지 잠">
+            </a>
+            <p class="sub_section_font"># 단지</p>
+            <button onclick="location.href='pets.html'">➜</button>
+        </article>
+        <article>
+            <a href="pets.html">
+                <img src="image/양말꽁.jpg" alt="이미지 4">
+            </a>
+            <p class="sub_section_font"># 꽁이</p>
+            <button onclick="location.href='pets.html'">➜</button>
+        </article>
+    </section>
+</main>
+<footer id="footer_main">
+    <p>제작자: 김지현</p>
+    <p>학교: 공주대학교</p>
+</footer>
+</body>
+<script src="index.js"></script>
+</html>
